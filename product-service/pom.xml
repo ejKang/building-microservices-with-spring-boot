@@ -14,7 +14,9 @@
 	<name>product-service</name>
 	<description>Product microservice</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>1.8</java.version>
+		<skip.test>true</skip.test>
+        <maven.test.skip>${skip.test}</maven.test.skip>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -28,12 +30,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
+		</dependency><!-- 
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 			<version>3.0.1</version>
-		</dependency>
+		</dependency> -->
 
 		<dependency>
 			<groupId>com.h2database</groupId>
