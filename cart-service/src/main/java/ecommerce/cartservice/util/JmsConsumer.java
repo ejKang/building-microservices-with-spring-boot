@@ -25,7 +25,8 @@ public class JmsConsumer {
             productRepository.save(product);
 
         } catch (JsonProcessingException e) {
-            e.getStackTrace();
+        	
+           System.out.println(e.getStackTrace().toString());
         }
     }
 
